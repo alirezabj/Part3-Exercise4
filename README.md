@@ -34,7 +34,7 @@ class Point {
 - Sharing: It is risky because the same reference to the array can be exposed for example via a getter, which allows unintended modifications.
 The issue is that the class is mutable which means that clients can modify x and y. 
 
-
+---
 
 
 ```java
