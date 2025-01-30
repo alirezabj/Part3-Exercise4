@@ -46,7 +46,7 @@ record Point(int x, int y) {}
 - Sharing: it is safe becasue each instance of Point is immutable.
 In this example, objects are immutable and safe to share and cannot be modified after creation.
 
-
+---
 
 ```java
 record Point(Number x, Number y) {
