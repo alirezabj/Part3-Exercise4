@@ -31,7 +31,7 @@ class Point {
 **Behavior:**
 - Reading: x and y coordinates can be accessed using values[0] and values[1]
 - Modification: It is possible even though the values array is final because final only prevents reassignment of the reference, not modifications to the array itself.
-- Sharing: It is risky because if the array reference is exposed for example via a getter method returning values, external clients could modify the internal state of the object.
+- Sharing: Risky because if the array reference is exposed for example via a getter method returning values, external clients could modify the internal state of the object.
 
 ---
 
@@ -42,7 +42,7 @@ record Point(int x, int y) {}
 **Behavior:**
 - Reading: x and y coordinates can be accessed using (point.x(), point.y())
 - Modification: It is not possible becasue record fields are immutable.
-- Sharing: It is safe becasue each instance of Point is immutable.
+- Sharing: Safe becasue each instance of Point is immutable.
 In this example, objects are immutable and safe to share and cannot be modified after creation.
 
 ---
@@ -58,7 +58,7 @@ record Point(Number x, Number y) {
 **Behavior:** 
 - Reading: x and y coordinates can be accessed using (point.x().value, point.y().value)
 - Modification: It is possible becasue Number is mutable.
-- Sharing: It is risky since multiple clients could share the same Number object and modify it unintentionally. This is becasue although the Point record  itself is immutable and x and y cannot be reassigned, Number is mutable which means the coordinates can be modified through the Number object.
+- Sharing: Risky since multiple clients could share the same Number object and modify it unintentionally. This is becasue although the Point record  itself is immutable and x and y cannot be reassigned, Number is mutable which means the coordinates can be modified through the Number object.
 
 
 
