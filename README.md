@@ -58,8 +58,7 @@ record Point(Number x, Number y) {
 **Behavior:** 
 - Reading: x and y coordinates can be accessed using (point.x().value, point.y().value)
 - Modification: It is possible becasue Number is mutable.
-- Sharing: It is risky since multiple clients could share the same Number object and modify it unintentionally.
-The issue is that although the Point record  itself is immutable and x and y cannot be reassigned, Number is mutable which means the coordinates can be modified through the Number object.
+- Sharing: It is risky since multiple clients could share the same Number object and modify it unintentionally. This is becasue although the Point record  itself is immutable and x and y cannot be reassigned, Number is mutable which means the coordinates can be modified through the Number object.
 
 
 
