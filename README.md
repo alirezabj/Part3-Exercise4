@@ -6,7 +6,7 @@ The best choice for represeinting temperature is a record class because it fits 
 
 ### B)
 
-The most suitable Java class construction for representing diseases in medicine is a record class because it keeps the data simple and easy to use while allowing new diseases to be added over time. Diseases have a name and symptoms, and since new ones can appear each year, we need a flexible way to create them. Unlike enum classes, which have a fixed list of values, records let us add new diseases without changing the code. Other options, like static inner classes and nested classes, are unnecessary because diseases don’t belong inside another class. Anonymous classes are meant for short-term use, which doesn’t fit our needs, and sealed classes would limit how many diseases we can create.
+The most suitable Java class for representing diseases in medicine is a record class because it keeps the data simple and easy to use while allowing new diseases to be added over time. Diseases have a name and symptoms, and since new ones can appear each year, we need a flexible way to create them. Unlike enum classes, which have a fixed list of values, records let us add new diseases without changing the code. Other options, like static inner classes and nested classes, are unnecessary because diseases don’t belong inside another class. Anonymous classes are meant for short-term use, which doesn’t fit our needs, and sealed classes would limit how many diseases we can create.
 
 ### C)
 
