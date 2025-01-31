@@ -31,8 +31,7 @@ class Point {
 **Behavior:**
 - Reading: x and y coordinates can be accessed using values[0] and values[1]
 - Modification: It is possible even though the values array is final because final only prevents reassignment of the reference, not modifications to the array itself.
-- Sharing: It is risky because the same reference to the array can be exposed for example via a getter, which allows unintended modifications.
-The issue is that the class is mutable which means that clients can modify x and y. 
+- Sharing: 
 
 ---
 
