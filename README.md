@@ -6,6 +6,9 @@ The best choice for represeinting temperature is a record class because it fits 
 
 ### B)
 
+The best choice for representing diseases is a static inner class because it allows related classes to be grouped together without relying on an instance of the outer class. For example, a Disease class could be defined inside a larger MedicalDatabase or Hospital class to keep disease information organized. Moreover, this structure allows for the creation and updating of diseases, as new ones might appear in the future. Other options are less suitable. An instance-specific inner class requires a specific outer instance, which diseases don’t need. An anonymous class is meant for temporary, one time use and is not reusable. An enum defines a fixed set of constant values and is too restrictive, making it unsuitable since new diseases appear in the future. Record classes are immutable, but disease attributes like symptoms may change. Finally, sealed classes limit inheritance, which isn’t practical when new diseases are discovered.
+
+
 
 
 ### C)
