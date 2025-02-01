@@ -60,7 +60,7 @@ record Point(Number x, Number y) {
 ```
 **Behavior:** 
 - Reading: x and y coordinates can be accessed using (point.x().value, point.y().value)
-- Modification: Although the record is immutable and we cannot assign new Number objects to x or y, the contents of the Number objects are mutable
+- Modification: Although the record is immutable and we cannot assign new Number objects to x or y, the contents of the Number objects are mutable. For example, point.x().value = 20; will change the x coordinate. 
 - Sharing: Risky since although the record itself is immutable, sharing the Number objects allows other clients to modify the coordinate values. 
 
 
