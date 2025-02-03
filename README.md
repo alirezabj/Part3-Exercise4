@@ -33,7 +33,7 @@ class Point {
 ```
 **Behavior:**
 - Reading: x and y coordinates can be accessed using values[0] and values[1]
-- Modification: It is possible even though the values array is final because final only prevents reassignment of the reference, not modifications to the array itself. For example, point.values[0] = 10; will change the x coordinate.
+- Modification: It is possible even though the values array is final because final only prevents reassignment of the reference, not modifications to the array itself. For example, point.values[0] = 10 will change the x coordinate.
 - Sharing: Risky since arrays are mutable, if the values array is shared with other objects or clients, they can modify the coordinates. 
 
 ---
